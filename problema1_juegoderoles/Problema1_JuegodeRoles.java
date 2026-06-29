@@ -12,5 +12,8 @@ public class Problema1_JuegodeRoles {
         
         guerrero.getInventario().usarObjetos();
         guerrero.atacar();
+        
+        guerrero.getGestorEstados().agregarEstado(new Problema1_EstadoEnvenenado());
+        guerrero.getGestorEstados().aplicarEstados(guerrero);
     }
 }
